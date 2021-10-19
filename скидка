@@ -1,0 +1,19 @@
+using System ;
+using System.Collections.Generic;
+
+namespace Skidka{
+    class Program{
+        public static void Main(string[] args){
+            double a;
+            a = Convert.ToDouble(Console.ReadLine().Replace('.', ','));
+            if (a >= 500 && a < 1000)
+                a *= 0.97;
+            else if (a >= 1000)
+                a *= 0.95;
+            Console.WriteLine(a);
+            
+            Console.ReadKey();
+            
+        }
+    }
+}
