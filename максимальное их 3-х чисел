@@ -1,0 +1,13 @@
+using System;
+namespace program{
+    class MainClass{
+        public static void Main(string[] args){
+            double z, x, c;
+            z = Convert.ToDouble(Console.ReadLine());
+            x = Convert.ToDouble(Console.ReadLine());
+            c = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine(Math.Max(z, Math.Max(x, c)));
+            Console.ReadKey();
+        }
+    }
+}
