@@ -1,0 +1,21 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /* Вводятся три числа — длины трех сторон треугольника. 
+             * Создайте функцию Perimeter(), которая вычисляет периметр треугольника по длинам трех его сторон.*/
+            int a, s, d;
+            a = Convert.ToInt32(Console.ReadLine());
+            s = Convert.ToInt32(Console.ReadLine());
+            d = Convert.ToInt32(Console.ReadLine());
+            int Perimeter = (a + s + d);
+            Console.WriteLine("Perimeter = " + Perimeter);
+
+
+        }
+    }
+}
