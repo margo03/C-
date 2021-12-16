@@ -1,0 +1,35 @@
+using System;
+class Program
+{
+    static void Main(string[] args)
+    {
+        var n = Convert.ToInt32(Console.ReadLine());
+        var array = Array.ConvertAll(Console.ReadLine().Split(' '), s => int.Parse(s));
+        int[] plus = new int[n];
+        int[] other = new int[n];
+        int k = 0;
+        int j = 0;
+        for (int i = 0; i < array.Length; i++)
+        {
+            if (array[i] > 0)
+            {
+                plus[k] = array[i];
+                k++;
+            } else
+            {
+                other[j] = array[i];
+                j++;
+            }
+        }
+        for (int i = 0; i < array.Length; i++)
+        {
+            Console.Write($"{plus[i]} ");
+        }
+        Console.WriteLine();
+        for (int i = 0; i < array.Length; i++)
+        {
+            Console.Write($"{other[i]} ");
+        }
+    }
+}
+© 2021 GitHu
